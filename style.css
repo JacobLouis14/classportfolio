@@ -1,0 +1,227 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+/* Header Section */
+.navbar {
+  display: flex; /*place each child element side by side*/
+  width: 85%;
+  justify-content: space-between; /*Space between the child*/
+  margin-left: 100px;
+  align-items: center; /*Vertically center*/
+}
+#logo {
+  width: 120px;
+}
+.listItem {
+  display: inline-block; /* place element side by side*/
+  margin: 10px 20px;
+}
+.link {
+  color: black;
+  text-decoration: none; /* Remove the underline */
+  font-weight: bold;
+  font-size: 18px;
+}
+.link:hover {
+  color: blueviolet;
+}
+/* Home Section */
+#home {
+  width: 100%;
+  height: 50vh;
+}
+.homeIntro {
+  margin-left: 15%;
+  margin-top: 13%;
+}
+.homeIntro span {
+  color: blueviolet;
+}
+.homeIntro h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.homeIntro p {
+  font-size: 20px;
+}
+.homeIntro a {
+  margin-top: 25px;
+  display: inline-block;
+  background-color: blueviolet;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.homeImage {
+  width: 45%;
+  height: 60%;
+  position: absolute;
+  right: 30px;
+  bottom: 100px;
+}
+.imageGroup {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%);
+  transition: bottom 1s, left 2s;
+}
+.homeImage:hover #avatar {
+  left: 40%;
+}
+/* About section */
+#about {
+  margin: 5% 8%;
+}
+.header {
+  text-align: center;
+}
+.header h4 {
+  font-size: 35px;
+}
+.header span {
+  font-size: 25px;
+  color: blueviolet;
+}
+.aboutContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2%;
+}
+.aboutImage img {
+  width: 80%;
+}
+.aboutDetails {
+  margin-top: 4%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.aboutDetails p {
+  text-align: justify;
+}
+.aboutInfromation {
+  margin-top: 30px;
+}
+.infoBox {
+  margin-bottom: 20px;
+}
+.infoBox span {
+  margin-left: 15px;
+}
+/* Skill Section */
+#skills {
+  margin: 0% 8%;
+}
+.skillsContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* 1rem = 16px */
+  margin-top: 20px;
+}
+.skillImage img {
+  width: 100%;
+}
+.barContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.barContainer span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.barBox {
+  width: 100%;
+  height: 0.5rem;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#htmlBar {
+  background-color: blueviolet;
+  width: 95%;
+}
+#cssBar {
+  background-color: blueviolet;
+  width: 88%;
+}
+#javascriptBar {
+  background-color: blueviolet;
+  width: 89%;
+}
+#reactBar {
+  background-color: blueviolet;
+  width: 85%;
+}
+/* Skill Section */
+#contact {
+  margin-top: 5%;
+}
+.iconSet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+.icon,
+.upArrow {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+  border-radius: 50px;
+}
+.icon i {
+  color: black;
+}
+.icon:hover {
+  background-image: linear-gradient(to top left, blue, blueviolet);
+}
+.icon:hover i {
+  color: white;
+  animation: shake 1s;
+}
+@keyframes shake {
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+/* Footer */
+footer p {
+  text-align: center;
+}
+.upArrow {
+  float: right;
+  margin: 30px 20px 30px 0px;
+  background-image: linear-gradient(to top left, blue, blueviolet);
+}
+.upArrow:hover i {
+  color: white;
+}
